@@ -6,7 +6,6 @@
     <title>LogicStream Labs | Engineered for Tomorrow</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom glow effect for the tech aesthetic */
         .glow-text {
             text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
         }
@@ -19,16 +18,16 @@
             LogicStream<span class="text-sky-500">Labs</span>
         </div>
         <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-            <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
-            <a href="#aboutus" class="hover:text-sky-400 transition-colors">About Us</a>
-            <a href="#contact" class="hover:text-sky-400 transition-colors">Contact us</a>
+            <a href="#products" class="hover:text-sky-400 transition-colors">Products</a>
+            <a href="#about" class="hover:text-sky-400 transition-colors">About Us</a>
+            <a href="#contact" class="hover:text-sky-400 transition-colors">Partner with us</a>
         </div>
         <a href="#contact" class="hidden md:block px-5 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-md text-sm font-semibold transition-all">
             Request Demo
         </a>
     </nav>
 
-    <section class="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center text-center">
+    <section class="container mx-auto px-6 py-24 flex flex-col items-center text-center">
         <div class="inline-block px-3 py-1 mb-6 rounded-full border border-gray-700 bg-gray-900 text-sky-400 text-xs font-semibold tracking-widest uppercase">
             Engineered for Tomorrow
         </div>
@@ -37,52 +36,59 @@
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Hardware Driven.</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed">
-            Introducing <strong>CredoSync</strong>. We bridge the gap between physical sensor data and enterprise policy enforcement with our proprietary RFID and attendance logic systems.
+            Bridging the gap between physical sensor data and enterprise policy enforcement with proprietary hardware and logic systems.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#projects" class="px-8 py-4 bg-sky-600 hover:bg-sky-500 text-white rounded-lg font-semibold shadow-lg shadow-sky-500/30 transition-all">
-                Explore the Tech
-            </a>
-            <a href="#contact" class="px-8 py-4 bg-gray-800 hover:bg-gray-700 border border-gray-700 text-white rounded-lg font-semibold transition-all">
-                View Prototypes
-            </a>
-        </div>
     </section>
 
-    <section id="projects" class="bg-gray-900 border-y border-gray-800 py-20">
+    <section id="products" class="bg-gray-900 border-y border-gray-800 py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">The LogicStream Ecosystem</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-white">Our Projects</h2>
+            <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Click on any product to view the hardware blueprints, C++ code documentation, and real-world compliance applications.</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="p-8 rounded-2xl bg-gray-950 border border-gray-800 hover:border-sky-500/50 transition-colors">
-                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-sky-400">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">Sensor-Driven Architecture</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Built on robust microcontroller ecosystems (like ESP32), providing real-time data ingestion directly from the physical environment.
-                    </p>
-                </div>
-
-                <div class="p-8 rounded-2xl bg-gray-950 border border-gray-800 hover:border-sky-500/50 transition-colors">
-                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-sky-400">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <a href="credosync.html" class="group block p-8 rounded-2xl bg-gray-950 border border-gray-800 hover:border-sky-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-sky-900/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-sky-400 group-hover:scale-110 transition-transform">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">CredoSync Security</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Advanced RFID verification tied to custom attendance logic, ensuring that access and compliance records are cryptographically sound.
+                    <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">CredoSync</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        An automated sensor-driven compliance system utilizing advanced RFID architecture and customized attendance logic to secure physical environments.
                     </p>
-                </div>
+                    <span class="text-sky-500 text-sm font-semibold flex items-center">
+                        View Details 
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </a>
 
-                <div class="p-8 rounded-2xl bg-gray-950 border border-gray-800 hover:border-sky-500/50 transition-colors">
-                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-sky-400">
+                <a href="project-two.html" class="group block p-8 rounded-2xl bg-gray-950 border border-gray-800 hover:border-sky-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-sky-900/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-sky-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">ESP Prototyping Hub</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        A rapid hardware testing environment built around ESP32 architecture, designed for immediate sensor integration and wireless data telemetry.
+                    </p>
+                    <span class="text-sky-500 text-sm font-semibold flex items-center">
+                        View Details 
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </a>
+
+                <a href="project-three.html" class="group block p-8 rounded-2xl bg-gray-950 border border-gray-800 hover:border-sky-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-sky-900/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-sky-400 group-hover:scale-110 transition-transform">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">C++ Powered Logic</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Low-latency, highly optimized firmware code executing on edge devices to process interactions in milliseconds.
+                    <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Legacy Core Module</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Low-level assembly language solutions structured for 8051 microcontrollers, ensuring high stability for foundational industrial processes.
                     </p>
-                </div>
+                    <span class="text-sky-500 text-sm font-semibold flex items-center">
+                        View Details 
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </a>
+
             </div>
         </div>
     </section>
@@ -90,9 +96,6 @@
     <footer class="bg-gray-950 py-12 border-t border-gray-800 text-center">
         <p class="text-gray-500 text-sm">
             &copy; 2026 LogicStream Labs. All rights reserved.
-        </p>
-        <p class="text-gray-600 text-xs mt-2">
-            Engineered for Tomorrow.
         </p>
     </footer>
 
