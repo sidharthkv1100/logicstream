@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CredoSync | LogicStream Labs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glow-text { text-shadow: 0 0 15px rgba(56, 189, 248, 0.5); }
+        .circuit-bg {
+            background-image: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0) 0%, rgba(3, 7, 18, 1) 100%), 
+                              linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-sky-500 selection:text-white circuit-bg">
+
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+        <a href="index.html" class="flex items-center text-gray-400 hover:text-sky-400 transition-colors">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Hub
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-white">
+            LogicStream<span class="text-sky-500">Labs</span>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-6 py-20 flex flex-col items-center text-center">
+        <div class="inline-flex items-center px-4 py-1.5 mb-8 rounded-full border border-sky-500/30 bg-sky-900/20 text-sky-400 text-xs font-semibold tracking-wide shadow-[0_0_10px_rgba(56,189,248,0.2)]">
+            <span class="w-2 h-2 rounded-full bg-sky-400 mr-2 animate-pulse"></span>
+            Featured Project: IEEE Sensors Council MYOSA Event 5.0
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            Credo<span class="text-sky-500">Sync</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-3xl mb-10 leading-relaxed font-light">
+            An automated, sensor-driven compliance system. We bind physical environments to enterprise policy using cryptographically sound RFID attendance logic.
+        </p>
+    </section>
+
+    <section class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-white border-b border-gray-800 pb-4">System Architecture</h2>
+                
+                <div class="space-y-8 mt-8">
+                    <div class="flex">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded bg-gray-900 border border-gray-700 flex items-center justify-center text-sky-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-white">ESP32 Hardware Core</h3>
+                            <p class="text-gray-400 text-sm mt-1 leading-relaxed">
+                                Built around the robust ESP32 microcontroller ecosystem, allowing for rapid hardware prototyping, seamless wireless telemetry, and real-time sensor ingestion.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded bg-gray-900 border border-gray-700 flex items-center justify-center text-sky-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-white">C++ Firmware Logic</h3>
+                            <p class="text-gray-400 text-sm mt-1 leading-relaxed">
+                                Powered by highly optimized, low-latency C++ code. The firmware handles complex attendance logic at the edge, ensuring millisecond response times during hardware interactions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded bg-gray-900 border border-gray-700 flex items-center justify-center text-sky-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-white">RFID Security Protocol</h3>
+                            <p class="text-gray-400 text-sm mt-1 leading-relaxed">
+                                Replaces traditional vulnerable compliance checks with a dedicated RFID sensor array, creating an immutable log of physical presence tied to policy workflows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl border border-gray-800 p-6 shadow-2xl">
+                <div class="flex items-center justify-between mb-4 border-b border-gray-800 pb-2">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="text-xs text-gray-500 font-mono">credosync_logic.cpp</div>
+                </div>
+                <pre class="text-sm font-mono text-gray-300 overflow-x-auto">
+<span class="text-sky-400">#include</span> &lt;SPI.h&gt;
+<span class="text-sky-400">#include</span> &lt;MFRC522.h&gt;
+
+<span class="text-gray-500">// Initialize ESP32 Pins for RFID</span>
+<span class="text-sky-400">#define</span> SS_PIN  5
+<span class="text-sky-400">#define</span> RST_PIN 22
+
+MFRC522 rfid(SS_PIN, RST_PIN);
+
+<span class="text-purple-400">void</span> <span class="text-blue-300">setup</span>() {
+  Serial.begin(115200);
+  SPI.begin(); 
+  rfid.PCD_Init();
+  Serial.println(<span class="text-green-400">"LogicStream Labs: CredoSync Boot..."</span>);
+}
+
+<span class="text-purple-400">void</span> <span class="text-blue-300">loop</span>() {
+  <span class="text-gray-500">// Compliance Logic Execution</span>
+  <span class="text-sky-400">if</span> ( ! rfid.PICC_IsNewCardPresent()) return;
+  <span class="text-sky-400">if</span> ( ! rfid.PICC_ReadCardSerial()) return;
+  
+  verifyCompliance(rfid.uid.uidByte, rfid.uid.size);
+}
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-20 border-t border-gray-800 mt-12 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">Hardware Blueprints & Documentation</h2>
+        <p class="text-gray-400 mb-10 max-w-2xl mx-auto">
+            Full circuit diagrams, C++ source code, and our Expression of Interest (EOI) documentation for automated compliance implementations are available upon request.
+        </p>
+        <button class="px-8 py-4 bg-sky-600 hover:bg-sky-500 text-white rounded-lg font-semibold shadow-lg shadow-sky-500/30 transition-all">
+            Request Developer Access
+        </button>
+    </section>
+
+    <footer class="bg-gray-950 py-8 border-t border-gray-900 text-center">
+        <p class="text-gray-600 text-xs">
+            Engineered for Tomorrow. &copy; 2026 LogicStream Labs.
+        </p>
+    </footer>
+
+</body>
+</html>
