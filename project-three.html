@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Core Module | Pending Approval</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glow-text-amber { text-shadow: 0 0 15px rgba(245, 158, 11, 0.5); }
+        .circuit-bg {
+            background-image: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0) 0%, rgba(3, 7, 18, 1) 100%), 
+                              linear-gradient(rgba(245, 158, 11, 0.02) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(245, 158, 11, 0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-amber-500 selection:text-white circuit-bg h-screen flex flex-col">
+
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center border-b border-gray-800 bg-gray-950/80 backdrop-blur-md">
+        <a href="index.html" class="flex items-center text-gray-400 hover:text-amber-400 transition-colors">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Hub
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-white opacity-50">
+            LogicStream<span class="text-sky-500">Labs</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="max-w-2xl w-full bg-gray-900 border border-amber-500/30 rounded-2xl shadow-2xl shadow-amber-900/10 p-8 md:p-12 text-center relative overflow-hidden">
+            
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl animate-pulse"></div>
+
+            <div class="inline-flex items-center px-4 py-1.5 mb-8 rounded-full border border-amber-500/50 bg-amber-900/20 text-amber-400 text-xs font-bold tracking-widest uppercase">
+                <span class="relative flex h-2.5 w-2.5 mr-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
+                </span>
+                Status: Engineering Review Pending
+            </div>
+
+            <div class="w-16 h-16 mx-auto bg-gray-950 border border-gray-800 rounded-xl flex items-center justify-center mb-6 text-gray-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
+                Legacy Core Module
+            </h1>
+            
+            <p class="text-gray-400 mb-10 leading-relaxed">
+                This project is currently undergoing internal feasibility analysis and hardware architectural review by the LogicStream engineering team. Full documentation, circuit diagrams, and repository access will be unlocked upon final project approval.
+            </p>
+
+            <div class="bg-gray-950 rounded-lg p-4 text-left font-mono text-sm text-gray-500 border border-gray-800 mb-8">
+                <p class="text-green-500">> Initializing project parameters...</p>
+                <p>> Compiling 8051 assembly logic... <span class="text-green-500">[OK]</span></p>
+                <p>> Checking architectural compliance... <span class="text-amber-500 animate-pulse">[PENDING APPROVAL]</span></p>
+                <p class="text-gray-600 mt-2">Awaiting sign-off from Chief Engineer.</p>
+            </div>
+
+            <a href="index.html" class="inline-block px-8 py-3 bg-gray-950 hover:bg-gray-800 border border-gray-700 text-white rounded-lg font-semibold transition-all">
+                Return to Dashboard
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
